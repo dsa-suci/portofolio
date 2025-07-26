@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Portofolio - Dwi Suci</title>
+    <title>Portfolio Details - Dwi Suci</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
     <!-- Favicons -->
-    <link href="assets/img/logo-dsa2.png" rel="icon" />
+    <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
@@ -39,7 +39,7 @@
     <link href="assets/css/main.css" rel="stylesheet" />
   </head>
 
-  <body class="index-page">
+  <body class="portfolio-details-page">
     <header
       id="header"
       class="header d-flex align-items-center light-background sticky-top"
@@ -58,7 +58,7 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
@@ -85,30 +85,122 @@
     </header>
 
     <main class="main">
-      <!-- Hero Section -->
-      <section id="hero" class="hero section">
-        <img src="assets/img/laptop-bg.jpeg" alt="" data-aos="fade-in" />
+      <!-- Portfolio Details Section -->
+      <section id="portfolio-details" class="portfolio-details section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Portfolio Details</h2>
+          <!-- <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </p> -->
+        </div>
+        <!-- End Section Title -->
 
-        <div
-          class="container text-center"
-          data-aos="zoom-out"
-          data-aos-delay="100"
-        >
-          <div class="row justify-content-center">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
             <div class="col-lg-8">
-              <div class="bg-white py-3">
-                <h2>Dwi Suci Amelia</h2>
-                <p>I'm a software engineering</p>
-              </div>
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": "auto",
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    }
+                  }
+                </script>
 
-              <a href="about.html" class="btn-get-started">About Me</a>
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/smartmedia/Login.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/smartmedia/Detail-Playlist.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/smartmedia/Media.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/smartmedia/Device.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/smartmedia/Display-Log.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/smartmedia/Tracking.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/smartmedia/Content-Schedule.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/smartmedia/Station.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div
+                class="portfolio-info"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <h3>Smartmedia</h3>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th style="padding: 3px">Category</th>
+                      <td style="padding: 5px">:</td>
+                      <td>Web Application</td>
+                    </tr>
+                    <tr>
+                      <th style="padding: 3px">Languages</th>
+                      <td style="padding: 5px">:</td>
+                      <td>Vue, Javascript, Tailwind</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="portfolio-description"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <!-- <h2>Exercitationem repudiandae officiis neque suscipit</h2> -->
+                <p>
+                  Aplikasi web yang digunakan untuk mengatur playlist dan media
+                  yang akan diputarkan di KRL Commuter Line
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Hero Section -->
+      <!-- /Portfolio Details Section -->
     </main>
 
+    <!-- Scroll Top -->
     <a
       href="#"
       id="scroll-top"
